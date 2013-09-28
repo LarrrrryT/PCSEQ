@@ -22,6 +22,9 @@
 		290C7B0D17F78ED700017598 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290C7AEC17F78ED600017598 /* UIKit.framework */; };
 		290C7B1517F78ED700017598 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 290C7B1317F78ED700017598 /* InfoPlist.strings */; };
 		290C7B1717F78ED700017598 /* PCSEQTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 290C7B1617F78ED700017598 /* PCSEQTests.m */; };
+		290C7B2217F78F0600017598 /* PCSEQVisualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 290C7B2117F78F0600017598 /* PCSEQVisualizer.m */; };
+		290C7B2517F78F3600017598 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 290C7B2417F78F3600017598 /* UIImage+Color.m */; };
+		290C7B2817F78F4E00017598 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 290C7B2717F78F4E00017598 /* Common.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,12 @@
 		290C7B1217F78ED700017598 /* PCSEQTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PCSEQTests-Info.plist"; sourceTree = "<group>"; };
 		290C7B1417F78ED700017598 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		290C7B1617F78ED700017598 /* PCSEQTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCSEQTests.m; sourceTree = "<group>"; };
+		290C7B2017F78F0600017598 /* PCSEQVisualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCSEQVisualizer.h; sourceTree = "<group>"; };
+		290C7B2117F78F0600017598 /* PCSEQVisualizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCSEQVisualizer.m; sourceTree = "<group>"; };
+		290C7B2317F78F3600017598 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		290C7B2417F78F3600017598 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		290C7B2617F78F4E00017598 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		290C7B2717F78F4E00017598 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +127,7 @@
 				290C7AF817F78ED700017598 /* PCSAppDelegate.m */,
 				290C7AFA17F78ED700017598 /* Main_iPhone.storyboard */,
 				290C7AFD17F78ED700017598 /* Main_iPad.storyboard */,
+				290C7B2917F78F5800017598 /* PCSEQ */,
 				290C7B0017F78ED700017598 /* PCSViewController.h */,
 				290C7B0117F78ED700017598 /* PCSViewController.m */,
 				290C7B0317F78ED700017598 /* Images.xcassets */,
@@ -153,6 +163,19 @@
 				290C7B1317F78ED700017598 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		290C7B2917F78F5800017598 /* PCSEQ */ = {
+			isa = PBXGroup;
+			children = (
+				290C7B2017F78F0600017598 /* PCSEQVisualizer.h */,
+				290C7B2117F78F0600017598 /* PCSEQVisualizer.m */,
+				290C7B2317F78F3600017598 /* UIImage+Color.h */,
+				290C7B2417F78F3600017598 /* UIImage+Color.m */,
+				290C7B2617F78F4E00017598 /* Common.h */,
+				290C7B2717F78F4E00017598 /* Common.m */,
+			);
+			name = PCSEQ;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,9 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290C7B2817F78F4E00017598 /* Common.m in Sources */,
 				290C7B0217F78ED700017598 /* PCSViewController.m in Sources */,
 				290C7AF517F78ED600017598 /* main.m in Sources */,
+				290C7B2517F78F3600017598 /* UIImage+Color.m in Sources */,
 				290C7AF917F78ED700017598 /* PCSAppDelegate.m in Sources */,
+				290C7B2217F78F0600017598 /* PCSEQVisualizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
