@@ -11,7 +11,6 @@
 @interface UIImage (Color)
 
 + (UIImage *)imageWithColor:(UIColor *)color;
-+ (UIImage *)imageWithMusicGradient:(UIColor*)startColor withEndColor:(UIColor*)endColor;
 + (UIImage *)tintImage:(UIImage *)baseImage color:(UIColor *)theColor;
 - (UIImage *)imageTintedWithColor:(UIColor *)color;
 

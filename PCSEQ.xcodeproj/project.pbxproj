@@ -25,6 +25,9 @@
 		290C7B2217F78F0600017598 /* PCSEQVisualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 290C7B2117F78F0600017598 /* PCSEQVisualizer.m */; };
 		290C7B2517F78F3600017598 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 290C7B2417F78F3600017598 /* UIImage+Color.m */; };
 		290C7B2817F78F4E00017598 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 290C7B2717F78F4E00017598 /* Common.m */; };
+		29546F081B83884E008677E6 /* PCSEQVisualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 290C7B2117F78F0600017598 /* PCSEQVisualizer.m */; };
+		29546F091B838850008677E6 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 290C7B2417F78F3600017598 /* UIImage+Color.m */; };
+		29546F0A1B838852008677E6 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 290C7B2717F78F4E00017598 /* Common.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -223,9 +226,12 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = PCS;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = PCS;
 				TargetAttributes = {
+					290C7AE417F78ED600017598 = {
+						DevelopmentTeam = K65AW87D58;
+					};
 					290C7B0817F78ED700017598 = {
 						TestTargetID = 290C7AE417F78ED600017598;
 					};
@@ -290,6 +296,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29546F0A1B838852008677E6 /* Common.m in Sources */,
+				29546F091B838850008677E6 /* UIImage+Color.m in Sources */,
+				29546F081B83884E008677E6 /* PCSEQVisualizer.m in Sources */,
 				290C7B1717F78ED700017598 /* PCSEQTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,7 +353,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -357,6 +365,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -384,7 +393,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -397,6 +405,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -419,10 +428,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PCSEQ/PCSEQ-Prefix.pch";
 				INFOPLIST_FILE = "PCSEQ/PCSEQ-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -432,10 +444,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PCSEQ/PCSEQ-Prefix.pch";
 				INFOPLIST_FILE = "PCSEQ/PCSEQ-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -443,7 +458,6 @@
 		290C7B1E17F78ED700017598 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PCSEQ.app/PCSEQ";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -466,7 +480,6 @@
 		290C7B1F17F78ED700017598 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PCSEQ.app/PCSEQ";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -501,6 +514,7 @@
 				290C7B1C17F78ED700017598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		290C7B1D17F78ED700017598 /* Build configuration list for PBXNativeTarget "PCSEQTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +523,7 @@
 				290C7B1F17F78ED700017598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
